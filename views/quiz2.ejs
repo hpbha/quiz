@@ -1,28 +1,28 @@
 <%- include("header2.ejs") %>
 
-<div>
-	<table>
+<div class="final-div">
+	<table border="1">
 		<tr>
 		    <td>
-			   First question
+			   <strong>First question</strong>
 			</td>
 			<td>
 			  <% if(user.answers[0]==="Blue"){ %>
-					 Correct answer
+					 <i class="fas fa-check-circle" style="margin-right:.5rem"></i>Correct answer
 				<% } else{ %>
-				   Wrong answer
+				   <i class="fas fa-times-circle" style="margin-right:.5rem"></i>Wrong answer
 				<% } %>
  			</td>
 		</tr>
 		<tr>
 		    <td>
-			   Second question
+			   <strong>Second question</strong>
 			</td>
 			<td>
 			  <% if(user.answers[1]==="1947"){ %>
-					 Correct answer
+					 <i class="fas fa-check-circle" style="margin-right:.5rem"></i>Correct answer
 				<% } else{ %>
-				   Wrong answer
+				   <i class="fas fa-times-circle" style="margin-right:.5rem"></i>Wrong answer
 				<% } %>
  			</td>
 		</tr>
