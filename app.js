@@ -144,6 +144,6 @@ function isLoggedin(req,res, next){
 		res.redirect("login");
 	}
 }
-app.listen(process.env.PORT||3000, function(){
+app.listen(process.env.PORT || 3001, process.env.IP, function(){
 	console.log("Server listening on port 3000");
 });
