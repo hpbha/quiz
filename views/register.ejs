@@ -1,0 +1,18 @@
+<%- include("header.ejs") %>
+		<nav class="nav-bar">
+		  <ul class="nav-list">
+			  <li class="nav-item logo"> Quizzizz </li>
+		 </ul>
+		</nav>
+
+<div class="login-form">
+	<form action="/register" method="POST" class="form">
+			<h1>Sign Up</h1>
+			<input type="text" name="username" placeholder="username" class="form-item">
+			<input type="password" name="password" placeholder="password" class="form-item">
+			<button class="submit">Sign In</button>	
+   </form>
+</div>
+
+
+<%- include("footer.ejs") %>

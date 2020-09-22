@@ -1,0 +1,30 @@
+<%- include("header2.ejs") %>
+
+<div>
+	<table>
+		<tr>
+		    <td>
+			   First question
+			</td>
+			<td>
+			  <% if(user.answers[0]==="Blue"){ %>
+					 Correct answer
+				<% } else{ %>
+				   Wrong answer
+				<% } %>
+ 			</td>
+		</tr>
+		<tr>
+		    <td>
+			   Second question
+			</td>
+			<td>
+			  <% if(user.answers[1]==="1947"){ %>
+					 Correct answer
+				<% } else{ %>
+				   Wrong answer
+				<% } %>
+ 			</td>
+		</tr>
+	</table>
+</div>

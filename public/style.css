@@ -1,0 +1,187 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body{
+font-family: Montserrat;
+font-style: normal;
+	background-color:#E3E2FF;
+}
+
+.second{
+	display:none;
+} 
+
+.progressbar-container{
+	width: 50%;
+    height: 20px;
+    display: flex;
+	border: 2px solid #CDCCFF;
+    border-radius: 1rem;
+}
+.progressbar-container .first-part{
+	border-radius: 1rem;
+	background-color: #223F7D;
+    height: 100%;
+	width:0%;
+}
+.progressbar-container .first-part.move-progressbar{
+	-webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out; 
+    width:50%;
+}
+.progressbar-container .second-part{
+	border-radius: 1rem;
+    height: 100%;
+    width: 50%;
+}
+.nav-list{
+	display: flex;
+    list-style: none;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: 0 auto;
+	padding: 2rem;
+    align-items: center;
+}
+.nav-list li{
+	display:inline-block;
+	color:#223F7D;
+	font-weight:bold;
+	font-size:1rem;
+	
+}
+.nav-list li.logo{
+	font-weight: bold;
+    font-size: 2.1rem;
+	letter-spacing:0.1rem;
+}
+.nav-list li a,.nav-list li a:hover{
+	text-decoration:none;
+	color:inherit;
+	
+}
+.nav-list:last-child a{
+	padding:.8rem;
+	border:1px solid #223F7D;
+	border-radius: .9rem;
+}
+.nav-list:last-child a:hover{
+	background-color:#223F7D;
+	color:white;
+	transition:all .4s ease-in-out;
+}
+
+.login-form .form .form-item{
+	padding: 1rem;
+    border: 1px solid white;
+    border-radius: 20px;
+	outline:none;
+}
+.login-form .form .form-item:hover{
+	border-radius: 20px;
+	 border: 1px solid white;
+	outline:none;
+}
+.login-form .submit{
+	padding: 1rem 1rem;
+    border: 1px solid white;
+    border-radius: 20px;
+	outline:none;
+	background-color:#223F7D;
+	font-family: Montserrat;
+    font-style: normal;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 22px;
+   letter-spacing: 0.1em;
+   color: #FFFFFF;
+	cursor:pointer;
+}
+.login-form{
+	max-width: 48rem;
+    margin: 0 auto;
+    background-color: #CDCCFF;
+    height: 70%;
+    padding-left: 40px;
+    padding-right: 57px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-form .form{
+	display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 90%;
+    justify-content: space-around;
+}
+.login-form .form h1{
+	text-align:center;
+	font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 1.5rem;
+line-height: 22px;
+letter-spacing: 0.1em;
+color:#223F7D;
+}
+
+.first,.second{
+	height:88%;
+	padding: 2rem;
+    padding-top: 3rem;
+	padding-bottom:0;
+}
+.first p{
+	font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: 0.1em;
+}
+.first h2{
+	margin-bottom:1.5rem;
+}
+
+.container{
+	max-width: 50%;
+background-color: #CDCCFF;
+margin: 0 auto;
+	height:70%;
+}
+.questionandprogress{
+	display: flex;
+max-width: 50%;
+margin: 0 auto;
+justify-content: space-between;
+}
+.nav-bar{
+	margin-bottom:4rem;
+}
+.question1-options{
+	height:80%;
+	list-style:none;
+	display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+.question1-options li label{
+	font-size:1.5rem;
+	font-weight:400;
+}
+.next{
+	margin-left:2rem;
+	padding:.5rem;
+	border:none;
+	color:white;
+	background: #223F7D;
+    border-radius: 1rem;
+	font-weight:bold;
+	width: 20%;
+	cursor:pointer;
+}
