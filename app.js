@@ -98,7 +98,7 @@ app.post("/login",passport.authenticate("local",{
 
 app.get("/logout",function(req, res){
 	req.logout();
-	return res.render("home");
+	return res.render("login");
 })
 
 //handling answer
